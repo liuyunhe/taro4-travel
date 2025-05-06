@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+# npx 直接运行packjson 里面外层的  lint-staged 命令
+npx lint-staged
