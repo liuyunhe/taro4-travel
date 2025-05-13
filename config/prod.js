@@ -1,10 +1,14 @@
 
 
 export default {
+  env: {
+    NODE_ENV: '"production"',
+  },
+  defineConstants: {},
   mini: {},
   h5: {
     // 确保产物为 es5
-    legacy: true,
+    // legacy: true,
     /**
      * WebpackChain 插件配置
      * @docs https://github.com/neutrinojs/webpack-chain
@@ -31,5 +35,5 @@ export default {
     //       postProcess: (context) => ({ ...context, outputPath: path.join(staticDir, 'index.html') })
     //     }))
     // }
-  }
-}
+  },
+};
